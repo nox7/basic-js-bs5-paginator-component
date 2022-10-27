@@ -1,0 +1,16 @@
+.js-paginator{
+	display:inline-flex;
+
+	.js-paginator-form-container {
+		display:flex;
+		align-items: center;
+		margin:0 0.5rem;
+
+		.js-paginator-form {
+			.js-paginator-page-number-input {
+				width: 70px;
+				text-align: center;
+			}
+		}
+	}
+}
