@@ -18,7 +18,7 @@ import Paginator from "../../js-global/paginator/Paginator.js";
 
 const element = document.querySelector("#paginator-container");
 const paginator = new Paginator(element);
-paginator.setMaxPages(10);
+paginator.setMaxPages(3);
 
 paginator.onNextButtonClicked(newPage => {
 	// Some logic
