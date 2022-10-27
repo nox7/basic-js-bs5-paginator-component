@@ -32,3 +32,6 @@ paginator.onPageNumberFormSubmitted(newPage => {
 	// Some logic
 });
 ```
+
+## Default Appearance
+![image](https://user-images.githubusercontent.com/17110935/198338653-535c41ec-f1ee-4ab1-975b-73647343b78d.png)
