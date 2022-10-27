@@ -14,7 +14,7 @@ The paginator will handle invalid pages (out of bounds page numbers) for the but
 ```
 
 ```js
-import Paginator from "../../js-global/paginator/Paginator.js";
+import Paginator from "./Paginator.js";
 
 const element = document.querySelector("#paginator-container");
 const paginator = new Paginator(element);
