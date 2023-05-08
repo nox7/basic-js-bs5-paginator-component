@@ -2,7 +2,6 @@ export default class Paginator {
 
 	public container: HTMLElement;
 
-	/** @type {HTMLElement} */
 	private _dom: HTMLElement;
 	private _currentPage: number = 1;
 	private _maxPages: number = 1;
@@ -38,7 +37,7 @@ export default class Paginator {
 	 * When the previous page button is clicked. Callback will be fired with the new page number
 	 * as an argument.
 	 */
-	public OnPrevButtonClicked(callback: (page: number) => {}): void {
+	public OnPrevButtonClicked(callback: (page: number) => void): void {
 		this._prevButtonClickEvents.push(callback);
 	}
 
@@ -46,7 +45,7 @@ export default class Paginator {
 	 * When the next page button is clicked. Callback will be fired with the new page number
 	 * as an argument.
 	 */
-	public OnNextButtonClicked(callback: (page: number) => {}): void {
+	public OnNextButtonClicked(callback: (page: number) => void): void {
 		this._nextButtonClickEvents.push(callback);
 	}
 
@@ -54,7 +53,7 @@ export default class Paginator {
 	 * When the input field for the page number is submitted. Callback will be fired with the new page number
 	 * as an argument.
 	 */
-	public OnPageNumberFormSubmitted(callback: (page: number) => {}): void {
+	public OnPageNumberFormSubmitted(callback: (page: number) => void): void {
 		this._formSubmittedEvents.push(callback);
 	}
 
